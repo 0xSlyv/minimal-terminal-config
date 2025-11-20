@@ -168,7 +168,6 @@ if ($installIcons -eq "Yes") {
     $customProfile += "# === Terminal Icons ==="
     $customProfile += "try {"
     $customProfile += "    Import-Module -Name Terminal-Icons -Force -ErrorAction SilentlyContinue"
-    $customProfile += "    Write-Host 'Terminal-Icons loaded' -ForegroundColor Green"
     $customProfile += "} catch {"
     $customProfile += "    Write-Warning 'Failed to load Terminal-Icons'"
     $customProfile += "}"
@@ -228,8 +227,6 @@ if ($enablePSReadLine -eq "Yes") {
 if ($disableTelemetry -eq "Yes") {
     $customProfile += "# === Disable Telemetry ==="
     $customProfile += '$env:POWERSHELL_TELEMETRY_OPTOUT = "1"'
-    $customProfile += "Write-Host 'PowerShell telemetry disabled' -ForegroundColor Yellow"
-    $customProfile += ""
 }
 
 # Custom Commands
