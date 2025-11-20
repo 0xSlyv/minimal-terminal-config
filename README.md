@@ -16,7 +16,7 @@
 
 1. Run the following command **as Administrator** with Powershell 7:
 ```powershell
-    irm "https://raw.githubusercontent.com/0xSlyv/minimal-terminal-config/refs/heads/main/psprofile.ps1" | iex
+irm "https://raw.githubusercontent.com/0xSlyv/minimal-terminal-config/refs/heads/main/psprofile.ps1" | iex
 ```
 2. Follow the interactive prompts to:
    - Name your profile file
